@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Europe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.css">
+
+    <script src="js/uikit.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <script>
+        d3version4 = d3;
+        window.d3 = null
+    </script>
+
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+        d3version3 = d3;
+        window.d3 = null
+    </script>
+
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+        screenWidth = screen.width;
+        console.log(screenWidth);
+
+        screenHeight = screen.height;
+        console.log(screenHeight)
+    </script>
+
+    <header>
+        <div>
+            <h1 style="color: white; font-size: 80px">Слабка стать?</h1>
+            <h2 style="color: white; ">Або яких європейських ціннотей <br>не вистачає українцям</h2>
+        </div>
+
+    </header>
+
+
+    <article>
+        <div >
+            <p  align="justify" class="main-text">
+                Дуже часто певні види діяльності людини ми асоціюємо зі статтю: чоловічою або жіночою.
+                Всі ми давно звикли, що жінка - "хранителька домашнього вогнища", а чоловіку припадає заробляти гроші та "годувати сім'ю".
+                Окрім цього, нині існує величезна кількість стереотипів, пов'язаних із гендерною приналежністю.
+                Скоріш за все, кожен із нас хоч раз чув фрази типу: "жінка й автомобіль - речі несумісні", "жіноча логіка не створена для цього" або ж "не чоловіча це робота - прибирати чи готувати їжу", "що ж ти за чоловік такий, якщо не можеш кран відремонтувати".
+            </p>
+
+            <p align="justify" class="main-text">
+               Із такими стереотипами ми зустрічаємось дуже часто: у сім'ї, на роботі, на навчанні чи навіть просто в компанії друзів.
+               Часто ми поділяємо професії на "жіночі" та "чоловічі", навіть в університеті від викладачів можна почути, що дівчина не може стати хорошим інженером, аналітиком, програмістом, маркетологом тощо.
+               Натомість для неї годиться вдало вийти заміж та забути про особисті амбіції.
+               Все це створює дискримінацію за статтю та гендерну нерівність у суспільстві.
+            </p>
+
+            <p align="justify" class="main-text">
+                Безсумнівно, уставлені уявлення про сім'ю та визначені у ній ролі чоловіка та жінки часто сприймаються як "святая святих" і щось таке, що саме собою зрозуміле.
+                Але сьогодні 21 соліття, і все більше та більше жінок прагнуть розвиватись та реалізовувати себе на рівні з чоловіками.
+                Тут вони натикаються на цілу низку проблем, пов'язаних з рамками чи упередженнями щодо гендеру, сформованих у нашому суспільстві.
+                Наприклад, чи знали ви що, за даними Державної служби статистики, жінки в Україні отримують на 25% нижчу зарплату, у порівнянні з чоловіками
+                (детальніше можна ознайомитись з цією темою у <a href="http://texty.org.ua/pg/news/textynewseditor/read/75583/Zhinky_v_Ukrajini_zaroblajut_na_chvert_menshe"> статті </a>).
+
+             <p align="justify" class="main-text">
+                Жінка може зустріти дискримінацію на кожному кроці: починаючи із елементарних стереотипних жартів із уст друзів або чоловіка, закінчуючи
+                такими глобальними проблемами як гендерна нарівність на рівні цілої держави. Існує навіть таке поняття, як Індекс гендерної нерівності, який
+                щороку розраховується в рамках <a href="http://hdr.undp.org/en">програми розвитку ООН</a>.
+            </p>
+
+            <p align="justify" class="main-text">
+                Цей показник може коливатись в діапазоні від
+                0 до 1 (чим менший показник - тим більша соціальна рівність між чоловіком та жінкою) та розраховується на основі трьох важливих
+                аспектів: репродуктивного здоров’я – вимірюється коефіцієнт материнської смертності та рівень підліткової народжуваності;
+                розширення прав і можливостей – вимірюється часткою парламентських місць, які займають жінки, та часткою жінок і чоловіків віком від 25 років
+                і старше, що мають хоча б середню освіту; економічного статусу – виражається в участі на ринку праці та вимірюється рівнем економічної активності
+                чоловіків і жінок віком від 15 років і старше.
+            </p>
+
+            <p align="justify" class="main-text">
+                Зараз Україна прямує до Європи і тому нам необхідно звертати увагу не тільки на безсумнівно важливі економічні та політичні аспекти розвитку країни, але й на не
+                менш значущі показники розвитку суспільства, серед яких також Індекс гендерної нервіності. Неважко здогадатись, що в більш розвинутих країнах
+                Європи, таких як Швеція, Швейцарія, Німечинна чи Нідерланди, Індекс гендерної нерівності дуже низький, майже прирівнюється до нуля, у той час
+                як в Україні ситуація залишає бажати кращого.
+            </p>
+
+            <p align="justify" class="main-text">
+
+                Пропоную до вашої уваги дослідження, за допомогою якого ви самі зможете порівняти становище
+                України з іншими країнами Європи. Для більш загальної картини за допомогою карти та графіків можна переглянути не тільки динаміку Індекса гендерної
+                нерівності, але й таких важливих показників соціального добробуту країни як Індекс людського розвитку та ВВП на душу населення:
+            </p>
+
+            <p align="justify" class="main-text">
+
+            </p>
+
+        <div>
+
+            <div class="map">
+                <ul uk-tab style="margin-left: auto; margin-right: auto;" >
+                    <li class="uk-active"><a href="#" onClick="fillGII()">Індекс гендерної нерівності</a></li>
+                    <li><a href="#" onClick="fillHDI()">Індекс людського розвитку</a></li>
+                    <li><a href="#" onClick="fillGDP()">ВВП на душу населеня</a></li>
+                </ul>
+            </div>
+
+            <div class="inf">
+                <div>
+                    <img src="images/male.png" width="10%" >
+                    <img src="images/female.png" width="10%" >
+                    <div class="country"></div>
+                </div>
+
+
+                <div class="chart" id="ch1" >
+                    <p id="gii">Індекс гендерної нерівності </p>
+                    <svg class="chart1"  width="480" style="padding-bottom: 7% "  ></svg>
+                </div>
+
+                <div class="chart" >
+                    <p id="hdi">Індекс людського розвитку </p>
+                    <svg class="chart2"  id="ch2" width="480" style="padding-bottom: 7% " ></svg>
+                </div>
+
+                <div class="chart" >
+                    <p id="gdp">ВВП на душу населення </p>
+                    <svg class="chart3" id="ch3" width="480" style="padding-bottom: 7% "  ></svg>
+                </div>
+
+            </div>
+
+            <div class = "sources"> <i>* Мапу та графіки було створно за допомогою наступних джерел: <a href="http://hdr.undp.org/en">hdr.undp.org</a>
+                та <a href="http://www.worldbank.org/">worldbank.org</a></i>
+            </div>
+        </div>
+
+    </article>
+
+    <script>
+        var map = {
+
+            "Austria": "Австрія",
+            "Albania":"Албанія",
+            "Andorra":"Андорра",
+            "Belgium": "Бельгія",
+            "Belarus":"Білорусь",
+            "Bulgaria":"Болгарія",
+            "Bosnia and Herz.":"Боснія та Герцеговина",
+            "United Kingdom":"Велика Британія",
+            "Greece":"Греція",
+            "Denmark":"Данія",
+            "Estonia":"Естонія",
+            "Ireland":"Ірландія",
+            "Iceland":"Ісландія",
+            "Spain":"Іспанія",
+            "Italy":"Італія",
+            "Latvia":"Латвія",
+            "Lithuania":"Литва",
+            "Liechtenstein":"Ліхтенштейн",
+            "Luxembourg":"Люксембург",
+            "Macedonia":"Македонія",
+            "Malta":"Мальта",
+            "Moldova":"Молдова",
+            "Netherlands":"Нідерланди",
+            "Germany":"Німеччина",
+            "Norway":"Норвегія",
+            "Poland":"Польща",
+            "Portugal":"Португалія",
+            "Russia":"Росія",
+            "Romania":"Румунія",
+            "Serbia":"Сербія",
+            "Slovakia":"Словаччина",
+            "Slovenia":"Словенія",
+            "Hungary":"Угорщина",
+            "Ukraine":"Україна",
+            "Finland":"Фінляндія",
+            "France":"Франція",
+            "Croatia":"Хорватія",
+            "Czech Rep.":"Чехія",
+            "Montenegro":"Чорногорія",
+            "Switzerland":"Швейцарія",
+            "Sweden":"Швеція"
+        };
+
+
+        var isClickGII = true;
+        var isClickHDI = false;
+        var isClickGDP = false;
+
+        function fillGII() {
+            isClickGII = true;
+            isClickHDI = false;
+            isClickGDP = false;
+
+
+            svg.selectAll("g.legend").remove();
+
+            g.selectAll("path")
+                .attr("fill", fillColorGII );
+
+            var color_domain = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5 ];
+            var legend_labels = ["<0.05", " 0.05+", " 0.10+", " 0.20+", " 0.30+", " 0.40+"]
+            var ext_color_domain = [0, 0.05, 0.1, 0.2, 0.3, 0.4 ];
+
+            var color = d3version3.scale.threshold()
+                .domain(color_domain)
+                .range(["#CEE3F6", "#A9D0F5", "#81BEF7", "#58ACFA", "#2E9AFE", "#0080FF"]);
+
+            var legend = svg.selectAll("g.legend")
+                .data(ext_color_domain)
+                .enter().append("g")
+                .attr("class", "legend");
+
+            var ls_w = 20, ls_h = 20;
+
+            legend.append("rect")
+                .attr("x", 20)
+                .attr("y", function(d, i){ return h*0.5
+                    - (i*ls_h) - 2*ls_h;})
+                .attr("width", ls_w)
+                .attr("height", ls_h)
+                .style("fill", function(d, i) { return color(d); })
+                .style("opacity", 0.8);
+
+            legend.append("text")
+                .attr("x", 50)
+                .attr("y", function(d, i){ return h*0.5 - (i*ls_h) - ls_h - 4;})
+                .text(function(d, i){ return legend_labels[i]; });
+
+        }
+        function fillHDI() {
+            isClickGII = false;
+            isClickHDI = true;
+            isClickGDP = false;
+
+            svg.selectAll("g.legend").remove();
+
+            g.selectAll("path")
+                .attr("fill", fillColorHDI );
+
+            var color_domain = [ 0.75, 0.8, 0.85, 0.9, 0.95 , 1 ];
+            var legend_labels = ["<0.75", " 0.75+", " 0.80+", " 0.85+", " 0.90+", " 0.95+"]
+            var ext_color_domain = [0.6, 0.75, 0.8, 0.85, 0.9, 0.95  ];
+
+            var color = d3version3.scale.threshold()
+                .domain(color_domain)
+                .range(["#CEF6D8", "#A9F5BC", "#81F79F", "#58FA82", "#2EFE64", "#00FF40"]);
+
+
+
+            var legend = svg.selectAll("g.legend")
+                .data(ext_color_domain)
+                .enter().append("g")
+                .attr("class", "legend");
+
+            var ls_w = 20, ls_h = 20;
+
+            legend.append("rect")
+                .attr("x", 20)
+                .attr("y", function(d, i){ return h*0.5
+                    - (i*ls_h) - 2*ls_h;})
+                .attr("width", ls_w)
+                .attr("height", ls_h)
+                .style("fill", function(d, i) { return color(d); })
+                .style("opacity", 0.8);
+
+            legend.append("text")
+                .attr("x", 50)
+                .attr("y", function(d, i){ return h*0.5 - (i*ls_h) - ls_h - 4;})
+                .text(function(d, i){ return legend_labels[i]; });
+
+        }
+        function fillGDP() {
+            isClickGII = false;
+            isClickHDI = false;
+            isClickGDP = true;
+
+            svg.selectAll("g.legend").remove();
+            g.selectAll("path")
+                .attr("fill", fillColorGDP );
+
+            var color_domain = [7000, 15000, 25000, 35000, 50000, 70000 ];
+            var legend_labels = ["<7000", " 7000+", " 15000+", " 25000+", " 35000+", " 50000+"]
+            var ext_color_domain = [0, 7000, 15000, 25000, 35000, 50000];
+
+            var color = d3version3.scale.threshold()
+                .domain(color_domain)
+                .range(["#E3CEF6", "#D0A9F5", "#BE81F7", "#AC58FA", "#9A2EFE", "#8000FF"]);
+
+            var legend = svg.selectAll("g.legend")
+                .data(ext_color_domain)
+                .enter().append("g")
+                .attr("class", "legend");
+
+            var ls_w = 20, ls_h = 20;
+
+            legend.append("rect")
+                .attr("x", 20)
+                .attr("y", function(d, i){ return h*0.5
+                    - (i*ls_h) - 2*ls_h;})
+                .attr("width", ls_w)
+                .attr("height", ls_h)
+                .style("fill", function(d, i) { return color(d); })
+                .style("opacity", 0.8);
+
+            legend.append("text")
+                .attr("x", 50)
+                .attr("y", function(d, i){ return h*0.5 - (i*ls_h) - ls_h - 4;})
+                .text(function(d, i){ return legend_labels[i]; });
+
+        }
+
+        function fillColorGII(d) {
+
+            var name = " " + d.properties.name;
+            if (d.properties.continent !== 'Europe')
+                return 	'#C0C0C0';
+
+
+            var json = { " Afghanistan": 0.667, " Albania": 0.267, " Algeria": 0.429, " Armenia": 0.293, " Australia": 0.12, " Austria": 0.078, " Azerbaijan": 0.326, " Bahamas": 0.362, " Bahrain": 0.233, " Bangladesh": 0.52, " Barbados": 0.291, " Belarus": 0.144, " Belgium": 0.073, " Belize": 0.375, " Benin": 0.613, " Bhutan": 0.477, " Bolivia (Plurinational State of)": 0.446, " Bosnia and Herz.": 0.158, " Botswana": 0.435, " Brazil": 0.414, " Bulgaria": 0.223, " Burkina Faso": 0.615, " Burundi": 0.474, " Cambodia": 0.479, " Cameroon": 0.568, " Canada": 0.098, " Chad": 0.695, " Chile": 0.322, " China": 0.164, " Colombia": 0.393, " Congo": 0.592, " Congo (Democratic Republic of the)": 0.663, " Costa Rica": 0.308, " Croatia": 0.141, " Cuba": 0.304, " Cyprus": 0.116, " Czech Rep.": 0.129, " C�te d\u0027Ivoire": 0.672, " Denmark": 0.041, " Dominican Republic": 0.47, " Ecuador": 0.391, " El Salvador": 0.384, " Estonia": 0.131, " Ethiopia": 0.499, " Fiji": 0.358, " Finland": 0.056, " France": 0.102, " Gabon": 0.542, " Gambia": 0.641, " Georgia": 0.361, " Germany": 0.066, " Ghana": 0.547, " Greece": 0.119, " Guatemala": 0.494, " Guyana": 0.508, " Haiti": 0.593, " Honduras": 0.461, " Hungary": 0.252, " Iceland": 0.051, " India": 0.53, " Indonesia": 0.467, " Iran (Islamic Republic of)": 0.509, " Iraq": 0.525, " Ireland": 0.127, " Israel": 0.103, " Italy": 0.085, " Jamaica": 0.422, " Japan": 0.116, " Jordan": 0.478, " Kazakhstan": 0.202, " Kenya": 0.565, " Korea (Republic of)": 0.067, " Kuwait": 0.335, " Kyrgyzstan": 0.394, " Lao People\u0027s Democratic Republic": 0.468, " Latvia": 0.191, " Lebanon": 0.381, " Lesotho": 0.549, " Liberia": 0.649, " Libya": 0.167, " Lithuania": 0.121, " Luxembourg": 0.075, " Malawi": 0.614, " Malaysia": 0.291, " Maldives": 0.312, " Mali": 0.689, " Malta": 0.217, " Mauritania": 0.627, " Mauritius": 0.38, " Mexico": 0.345, " Moldova": 0.232, " Mongolia": 0.278, " Montenegro": 0.156, " Morocco": 0.494, " Mozambique": 0.574, " Myanmar": 0.374, " Namibia": 0.474, " Nepal": 0.497, " Netherlands": 0.044, " New Zealand": 0.158, " Nicaragua": 0.462, " Niger": 0.695, " Norway": 0.053, " Oman": 0.281, " Pakistan": 0.546, " Panama": 0.457, " Papua New Guinea": 0.595, " Paraguay": 0.464, " Peru": 0.385, " Philippines": 0.436, " Poland": 0.137, " Portugal": 0.091, " Qatar": 0.542, " Romania": 0.339, " Russia": 0.271, " Rwanda": 0.383, " Saint Lucia": 0.354, " Samoa": 0.439, " Sao Tome and Principe": 0.524, " Saudi Arabia": 0.257, " Senegal": 0.521, " Serbia": 0.185, " Sierra Leone": 0.65, " Singapore": 0.068, " Slovakia": 0.18, " Slovenia": 0.053, " South Africa": 0.394, " Spain": 0.081, " Sri Lanka": 0.386, " Sudan": 0.575, " Suriname": 0.448, " Swaziland": 0.566, " Sweden": 0.048, " Switzerland": 0.04, " Syrian Arab Republic": 0.554, " Tajikistan": 0.322, " Tanzania (United Republic of)": 0.544, " Thailand": 0.366, " Macedonia": 0.16, " Togo": 0.556, " Tonga": 0.659, " Trinidad and Tobago": 0.324, " Tunisia": 0.289, " Turkey": 0.328, " Uganda": 0.522, " Ukraine": 0.284, " United Arab Emirates": 0.232, " United Kingdom": 0.131, " United States": 0.203, " Uruguay": 0.284, " Uzbekistan": 0.287, " Venezuela (Bolivarian Republic of)": 0.461, " Viet Nam": 0.337, " Yemen": 0.767, " Zambia": 0.526, " Zimbabwe": 0.54 };
+
+
+            if (json[name] > 0 && json[name] <= 0.05) {
+                return "#CEE3F6";
+            }
+            if (json[name] > 0.05 && json[name] <= 0.1) {
+                return "#A9D0F5";
+            }
+            if (json[name] > 0.1 && json[name] <= 0.2) {
+                return "#81BEF7";
+            }
+            if (json[name] > 0.2 && json[name] <= 0.3) {
+                return "#58ACFA";
+            }
+            if (json[name] > 0.3 && json[name] <= 0.4) {
+                return "#2E9AFE";
+            }
+            if (json[name] > 0.4 && json[name] <= 0.5) {
+                return "#0080FF";
+            }
+            else
+                return 	'#C0C0C0';
+
+
+        }
+        function fillColorHDI(d) {
+
+            var name = " " + d.properties.name;
+            if (d.properties.continent !== 'Europe')
+                return 	'#C0C0C0';
+
+
+            var json = {" Afghanistan":0.479," Albania":0.764," Algeria":0.745," Andorra":0.858," Angola":0.533," Antigua and Barbuda":0.786," Argentina":0.827," Armenia":0.743," Australia":0.939," Austria":0.893," Azerbaijan":0.759," Bahamas":0.792," Bahrain":0.824," Bangladesh":0.579," Barbados":0.795," Belarus":0.796," Belgium":0.896," Belize":0.706," Benin":0.485," Bhutan":0.607," Bolivia (Plurinational State of)":0.674," Bosnia and Herz.":0.75," Botswana":0.698," Brazil":0.754," Brunei Darussalam":0.865," Bulgaria":0.794," Burkina Faso":0.402," Burundi":0.404," Cabo Verde":0.648," Cambodia":0.563," Cameroon":0.518," Canada":0.92," Central African Republic":0.352," Chad":0.396," Chile":0.847," China":0.738," Colombia":0.727," Comoros":0.498," Congo":0.592," Congo (Democratic Republic of the)":0.435," Costa Rica":0.776," Croatia":0.827," Cuba":0.775," Cyprus":0.856," Czech Rep.":0.878," C?te d\u0027Ivoire":0.474," Denmark":0.925," Djibouti":0.473," Dominica":0.726," Dominican Republic":0.722," Ecuador":0.739," Egypt":0.691," El Salvador":0.68," Equatorial Guinea":0.592," Eritrea":0.42," Estonia":0.865," Ethiopia":0.448," Fiji":0.736," Finland":0.895," France":0.897," Gabon":0.697," Gambia":0.452," Georgia":0.769," Germany":0.926," Ghana":0.579," Greece":0.866," Grenada":0.754," Guatemala":0.64," Guinea":0.414," Guinea-Bissau":0.424," Guyana":0.638," Haiti":0.493," Honduras":0.625," Hong Kong, China (SAR)":0.917," Hungary":0.836," Iceland":0.921," India":0.624," Indonesia":0.689," Iran (Islamic Republic of)":0.774," Iraq":0.649," Ireland":0.923," Israel":0.899," Italy":0.887," Jamaica":0.73," Japan":0.903," Jordan":0.742," Kazakhstan":0.794," Kenya":0.555," Kiribati":0.588," Korea (Republic of)":0.901," Kuwait":0.8," Kyrgyzstan":0.664," Lao People\u0027s Democratic Republic":0.586," Latvia":0.83," Lebanon":0.763," Lesotho":0.497," Liberia":0.427," Libya":0.716," Liechtenstein":0.912," Lithuania":0.848," Luxembourg":0.898," Madagascar":0.512," Malawi":0.476," Malaysia":0.789," Maldives":0.701," Mali":0.442," Malta":0.856," Mauritania":0.513," Mauritius":0.781," Mexico":0.762," Micronesia (Federated States of)":0.638," Moldova":0.699," Mongolia":0.735," Montenegro":0.807," Morocco":0.647," Mozambique":0.418," Myanmar":0.556," Namibia":0.64," Nepal":0.558," Netherlands":0.924," New Zealand":0.915," Nicaragua":0.645," Niger":0.353," Nigeria":0.527," Norway":0.949," Oman":0.796," Pakistan":0.55," Palau":0.788," Palestine, State of":0.684," Panama":0.788," Papua New Guinea":0.516," Paraguay":0.693," Peru":0.74," Philippines":0.682," Poland":0.855," Portugal":0.843," Qatar":0.856," Romania":0.802," Russia":0.804," Rwanda":0.498," Saint Kitts and Nevis":0.765," Saint Lucia":0.735," Saint Vincent and the Grenadines":0.722," Samoa":0.704," Sao Tome and Principe":0.574," Saudi Arabia":0.847," Senegal":0.494," Serbia":0.776," Seychelles":0.782," Sierra Leone":0.42," Singapore":0.925," Slovakia":0.845," Slovenia":0.89," Solomon Islands":0.515," South Africa":0.666," South Sudan":0.418," Spain":0.884," Sri Lanka":0.766," Sudan":0.49," Suriname":0.725," Swaziland":0.541," Sweden":0.913," Switzerland":0.939," Syrian Arab Republic":0.536," Tajikistan":0.627," Tanzania (United Republic of)":0.531," Thailand":0.74," Macedonia":0.748," Timor-Leste":0.606," Togo":0.487," Tonga":0.721," Trinidad and Tobago":0.78," Tunisia":0.725," Turkey":0.767," Turkmenistan":0.692," Uganda":0.493," Ukraine":0.743," United Arab Emirates":0.84," United Kingdom":0.91," United States":0.92," Uruguay":0.795," Uzbekistan":0.701," Vanuatu":0.597," Venezuela (Bolivarian Republic of)":0.767," Viet Nam":0.683," Yemen":0.482," Zambia":0.579," Zimbabwe":0.516};
+
+            if (json[name] > 0.6 && json[name] <= 0.75) {
+                return "#CEF6D8";
+            }
+            if (json[name] > 0.75 && json[name] <= 0.8) {
+                return "#A9F5BC";
+            }
+            if (json[name] > 0.8 && json[name] <= 0.85) {
+                return "#81F79F";
+            }
+            if (json[name] > 0.85 && json[name] <= 0.9) {
+                return "#58FA82";
+            }
+            if (json[name] > 0.9 && json[name] <= 0.95) {
+                return "#2EFE64";
+            }
+            if (json[name] > 0.95 && json[name] <= 1) {
+                return "#00FF40";
+            }
+            else
+                return 	'#C0C0C0';
+
+        }
+
+        function fillColorGDP(d) {
+            var name =  d.properties.name;
+            if (d.properties.continent !== 'Europe')
+                return 	'#C0C0C0';
+
+            var json = {"Afghanistan":1926.35733615809,"Angola":6635.24275034319,"Albania":11282.7935754788,"Arab World":16302.3637597421,"United Arab Emirates":70254.8315723693,"Argentina":20340.29241926,"Armenia":8727.55832544865,"Antigua and Barbuda":21462.2869423222,"Australia":46095.1655591581,"Austria":49938.106289923,"Azerbaijan":17782.0261527141,"Burundi":796.960811425412,"Belgium":45430.9073823844,"Benin":2116.06363772786,"Burkina Faso":1699.87988977636,"Bangladesh":3335.75979065344,"Bulgaria":18115.2350726374,"Bahrain":46775.7403335698,"Bahamas, The":22448.5270264115,"Bosnia and Herz.":11526.4243893206,"Belarus":18347.1407011402,"Belize":8584.22563455672,"Bolivia":6955.18276973353,"Brazil":15617.3212760458,"Barbados":17527.8328511429,"Brunei Darussalam":79439.062446088,"Bhutan":8245.60530630055,"Botswana":16352.545696024,"Central African Republic":667.042665228989,"Canada":44452.2498975123,"Central Europe and the Baltics":25830.7369155478,"Switzerland":63648.2880177144,"Chile":22647.4618198874,"China":14450.094990196,"Cote d\u0027Ivoire":3451.87741812427,"Cameroon":3502.40788727502,"Congo, Dem. Rep.":799.177934539208,"Congo, Rep.":5902.42965114336,"Colombia":13827.6727863559,"Comoros":1504.71658081263,"Cabo Verde":6302.49439628391,"Costa Rica":15881.6084683561,"Caribbean small states":15342.8721738578,"Cyprus":31523.9268785245,"Czech Rep.":33468.7264974291,"Germany":47810.8360109883,"Djibouti":3342.9007663676,"Dominica":10586.7702932566,"Denmark":48674.8407494886,"Dominican Republic":14238.8615166575,"Algeria":14614.970429045,"East Asia \u0026 Pacific (excluding high income)":12954.553909817,"Early-demographic dividend":8752.02511459805,"East Asia \u0026 Pacific":16099.996538894,"Europe \u0026 Central Asia (excluding high income)":19200.9593815614,"Europe \u0026 Central Asia":30640.673180233,"Ecuador":11446.3651373736,"Egypt, Arab Rep.":10750.4563039463,"Euro area":40852.1550923087,"Spain":34818.1205072534,"Estonia":28688.9687744908,"Ethiopia":1632.5518055136,"European Union":38446.8627354842,"Fragile and conflict affected situations":4068.59994566278,"Finland":42066.57476665,"Fiji":9027.54244178825,"France":40468.5097199871,"Micronesia, Fed. Sts.":3483.45593668339,"Gabon":17928.7029798014,"United Kingdom":41579.8634115553,"Georgia":9610.54338228378,"Ghana":4184.57761792593,"Guinea":1866.77457993172,"Gambia, The":1669.73184738084,"Guinea-Bissau":1540.29303317721,"Equatorial Guinea":29361.0680537046,"Greece":26697.2485044179,"Grenada":13585.5046357208,"Guatemala":7765.75727079973,"Guyana":7533.07164673986,"High income":45731.9495576266,"Hong Kong SAR, China":57071.6705483794,"Honduras":4590.81845503349,"Heavily indebted poor countries (HIPC)":2201.97542301618,"Croatia":22492.0651487371,"Haiti":1758.3344598491,"Hungary":26147.5373739471,"IBRD only":12336.3034287292,"IDA \u0026 IBRD total":10138.5575450261,"IDA total":3534.62495493164,"IDA blend":5130.71367826888,"Indonesia":11040.1900843813,"IDA only":2726.94629797625,"India":6127.29879526461,"Ireland":69394.4159857263,"Iran, Islamic Rep.":17571.2222428653,"Iraq":15897.2403050886,"Iceland":47055.1607169894,"Israel":35888.8758935766,"Italy":36629.6996914519,"Jamaica":8620.35652376923,"Jordan":9041.81756496415,"Japan":40607.0632064859,"Kazakhstan":25048.0508078194,"Kenya":3019.57611010062,"Kyrgyz Republic":3447.60825022898,"Cambodia":3504.41825365613,"Kiribati":2094.90943188852,"St. Kitts and Nevis":25737.6242945524,"Korea, Rep.":35203.734140356,"Kuwait":72918.0037634406,"Latin America \u0026 Caribbean (excluding high income)":14776.5301559646,"Lao PDR":6128.35823785121,"Lebanon":14218.8297179534,"Liberia":836.181489038688,"St. Lucia":12729.7742086845,"Latin America \u0026 Caribbean":15237.7434870395,"Least developed countries: UN classification":2536.9331287744,"Low income":1653.01789809804,"Sri Lanka":11922.644922172,"Lower middle income":6464.73037497824,"Low \u0026 middle income":9965.98545025248,"Lesotho":2883.8110871885,"Late-demographic dividend":15940.8631390724,"Lithuania":28709.7551892101,"Luxembourg":102517.138229939,"Latvia":24543.2100232056,"Macao SAR, China":106959.839554808,"Morocco":7770.24599129649,"Moldova":5054.68247321695,"Madagascar":1466.49746244796,"Maldives":14593.9728660639,"Middle East \u0026 North Africa":18636.0686096141,"Mexico":16983.4642100695,"Marshall Islands":3903.12790717999,"Middle income":10932.0111009331,"Macedonia":13766.3188262972,"Mali":2043.71810510616,"Malta":35873.820787986,"Myanmar":5384.86938870142,"Middle East \u0026 North Africa (excluding high income)":12259.2039956279,"Montenegro":16272.1956451856,"Mongolia":12152.1713808006,"Mozambique":1190.75222415194,"Mauritania":3835.2310604266,"Mauritius":20087.7153801145,"Malawi":1159.31984189185,"Malaysia":26623.3283680558,"North America":55262.1741273088,"Namibia":10610.5467741171,"Niger":963.254845454594,"Nigeria":6038.4623153936,"Nicaragua":5282.69923560336,"Netherlands":49527.6696637249,"Norway":61722.239910673,"Nepal":2464.38903347795,"Nauru":13066.2036179405,"New Zealand":37426.2836619219,"OECD members":40900.2393320517,"Oman":42742.5424946832,"Other small states":24736.996178264,"Pakistan":5000.28383883723,"Panama":22015.3266764872,"Peru":12530.8154908355,"Philippines":7320.49853859333,"Palau":15954.233067023,"Papua New Guinea":4117.31277773882,"Poland":26594.7578582656,"Pre-demographic dividend":3718.54505166049,"Puerto Rico":37580.9867618585,"Portugal":29532.3811616848,"Paraguay":9199.66938423151,"West Bank and Gaza":5019.19506990302,"Pacific island small states":5600.70521469997,"Post-demographic dividend":43680.26591913,"Qatar":127516.908588418,"Romania":21566.0730483419,"Russia":24691.8336492783,"Rwanda":1827.18713413489,"South Asia":5677.24626396776,"Saudi Arabia":54013.8780426308,"Sudan":4568.66485825461,"Senegal":2442.6430727681,"Singapore":86139.0836148161,"Solomon Islands":2186.63397178464,"Sierra Leone":1401.33342448205,"El Salvador":8354.0293562523,"San Marino":60028.9243456052,"Serbia":13896.1213879743,"Sub-Saharan Africa (excluding high income)":3716.96963599311,"South Sudan":1925.44711771138,"Sub-Saharan Africa":3719.14849849648,"Small states":21840.1063892361,"Sao Tome and Principe":3137.93905587782,"Suriname":15724.6393919787,"Slovakia":29522.0447700489,"Slovenia":31468.3631714967,"Sweden":47891.2778399445,"Swaziland":8261.74606049962,"Seychelles":27180.6170069898,"Chad":2180.45602566801,"East Asia \u0026 Pacific (IDA \u0026 IBRD countries)":13092.2258171368,"Europe \u0026 Central Asia (IDA \u0026 IBRD countries)":19821.0197459895,"Togo":1436.89780436926,"Thailand":16225.026951608,"Tajikistan":2811.86988951746,"Turkmenistan":15964.7918355795,"Latin America \u0026 the Caribbean (IDA \u0026 IBRD countries)":15153.4334910769,"Timor-Leste":2044.69996432492,"Middle East \u0026 North Africa (IDA \u0026 IBRD countries)":12348.2618215751,"Tonga":5526.47869643388,"South Asia (IDA \u0026 IBRD)":5677.24626396776,"Sub-Saharan Africa (IDA \u0026 IBRD countries)":3719.14849849648,"Trinidad and Tobago":33312.6421126914,"Tunisia":11447.1428010126,"Turkey":24844.8955515439,"Tuvalu":3539.3935133385,"Tanzania":2652.53164690112,"Uganda":1774.0108189895,"Ukraine":7949.14900233477,"Upper middle income":16133.5090839199,"Uruguay":21117.8015977599,"United States":56469.0089691129,"Uzbekistan":6069.97866590926,"St. Vincent and the Grenadines":11125.2015046932,"Vietnam":5915.1708326498,"Vanuatu":2988.85053762441,"World":15694.4305640005,"Samoa":5919.35982118632,"Kosovo":9687.21771969028,"Yemen, Rep.":2812.35579731576,"South Africa":13164.4759340215,"Zambia":3862.4784831131,"Zimbabwe":2036.31925973492};
+
+            if (json[name] > 0 && json[name] <= 7000) {
+                return "#E3CEF6";
+            }
+            if (json[name] > 7000 && json[name] <= 15000) {
+                return "#D0A9F5";
+            }
+            if (json[name] > 15000  && json[name] <= 25000) {
+                return "#BE81F7";
+            }
+            if (json[name] > 25000 && json[name] <= 35000) {
+                return "#AC58FA";
+            }
+            if (json[name] > 35000 && json[name] <= 50000) {
+                return "#9A2EFE";
+            }
+            if (json[name] > 50000 ) {
+                return "#8000FF";
+            }
+            else
+                return 	'#C0C0C0';
+
+        }
+
+
+
+        hide();
+
+        //Width and height
+        var w = screenWidth*0.6,
+            h = screenHeight*0.9,
+            centered;
+
+
+        //Define map projection
+
+        var projection = d3version3.geo.mercator()
+            .center([ 13, 52 ])
+            .translate([ w/2, h/2 ])
+            .scale([ w/1.5 ]);
+
+        //Define path generator
+        var path = d3version3.geo.path()
+            .projection(projection);
+
+
+        //Create SVG
+        var svg = d3version3.select(".map")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+
+
+        //легенда
+        var color_domain = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5 ];
+        var legend_labels = ["<0.05", " 0.05+", " 0.10+", " 0.20+", " 0.30+", " 0.40+"]
+        var ext_color_domain = [0, 0.05, 0.1, 0.2, 0.3, 0.4 ];
+
+        var color = d3version3.scale.threshold()
+            .domain(color_domain)
+            .range(["#CEE3F6", "#A9D0F5", "#81BEF7", "#58ACFA", "#2E9AFE", "#0080FF"]);
+
+        var legend = svg.selectAll("g.legend")
+            .data(ext_color_domain)
+            .enter().append("g")
+            .attr("class", "legend");
+
+        var ls_w = 20, ls_h = 20;
+
+        legend.append("rect")
+            .attr("x", 20)
+            .attr("y", function(d, i){ return h*0.5
+                - (i*ls_h) - 2*ls_h;})
+            .attr("width", ls_w)
+            .attr("height", ls_h)
+            .style("fill", function(d, i) { return color(d); })
+            .style("opacity", 0.8);
+
+        legend.append("text")
+            .attr("x", 50)
+            .attr("y", function(d, i){ return h*0.5 - (i*ls_h) - ls_h - 4;})
+            .text(function(d, i){ return legend_labels[i]; });
+
+        ///Кінець легенди
+
+
+        var g = svg.append("g");
+        // var g2 = svg2.append('g');
+
+        d3version3.json("data/countries_data.json", function(json) {
+
+            //Bind data and create one path per GeoJSON feature
+
+            g.selectAll("path")
+                .data(json.features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("stroke", "rgba(8, 81, 156, 0.2)")
+                .attr("fill", fillColorGII)
+                .on("click", clicked);
+
+        });
+
+
+
+        function clicked(d) {
+
+            var x, y, k;
+
+            var c = d.properties.continent;
+            console.log(c);
+
+            var name = d.properties.name;
+            console.log(name);
+
+
+            if (c === 'Europe' && name !== 'Kosovo') {
+                show();
+
+                if (d && centered !== d) {
+
+                    g.selectAll("path")
+                        .attr("fill", clickFill );
+
+                    function clickFill(d) {
+
+                        if (name !== d.properties.name) {
+                            return "#C0C0C0";
+                        }
+                        else {
+                            if (isClickGII)
+                                return fillColorGII(d);
+                            if (isClickHDI)
+                                return fillColorHDI(d);
+                            if (isClickGDP)
+                                return fillColorGDP(d);
+
+                        }
+
+                    }
+
+                    var centroid = path.centroid(d);
+                    if (name === 'Russia'){
+                        x = 600;
+                        y = 342;
+                    }
+                    else {
+
+                        x = centroid[0];
+                        y = centroid[1];
+                        console.log(centroid[0]);
+                        console.log(centroid[1]);
+                    }
+                    k = 2;
+                    centered = d;
+
+                    clear();
+
+                    var uaName = map[name];
+
+                    d3version3.select(".country")
+                        .append("text")
+                        .attr("id", "text1")
+                        .text(uaName);
+
+                    chart_gii(name);
+                    chart_hdi(name);
+                    chart_gdp(name);
+
+
+                } else {
+                    if (isClickGII){
+                        g.selectAll("path")
+                            .attr("fill", fillColorGII )
+                    }
+
+                    if (isClickHDI){
+                        g.selectAll("path")
+                            .attr("fill", fillColorHDI )
+                    }
+
+                    if (isClickGDP){
+                        g.selectAll("path")
+                            .attr("fill", fillColorGDP )
+                    }
+                    x = w / 2;
+                    y = h / 2;
+                    k = 1;
+                    centered = null;
+
+                    // text.delete();
+                }
+
+
+                g.selectAll("path")
+
+                    .classed("active", centered && function (d) {
+                        return d === centered;
+                    });
+
+                g.transition()
+                    .duration(750)
+                    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+                    .style("stroke-width", 1.5 / k + "px");
+
+            }
+        }
+
+        function hide() {
+            var gii = document.getElementById("gii");
+            var hdi = document.getElementById("hdi");
+            var gdp = document.getElementById("gdp");
+            gii.style.visibility = "hidden";
+            hdi.style.visibility = "hidden";
+            gdp.style.visibility = "hidden";
+        }
+
+        function show() {
+            var gii = document.getElementById("gii");
+            var hdi = document.getElementById("hdi");
+            var gdp = document.getElementById("gdp");
+            gii.style.visibility = "visible";
+            hdi.style.visibility = "visible";
+            gdp.style.visibility = "visible";
+        }
+
+        function clear() {
+            var element1 = document.getElementById('g1');
+            var element2 = document.getElementById('g2');
+            var element3 = document.getElementById('g3');
+            var element4 = document.getElementById('text1');
+
+            if(element1) {
+                element1.remove();
+            }
+            if(element2) {
+                element2.remove();
+            }
+            if(element3) {
+                element3.remove();
+            }
+            if(element4){
+                element4.remove();
+            }
+
+        }
+
+
+
+
+        //ввп на душу населення
+
+        function chart_gdp(name) {
+
+            var svg3 = d3version4.select(".chart3"),
+                margin = {top: 20, right: 20, bottom: 30, left: 50},
+                width = +svg3.attr("width") - margin.left - margin.right,
+                height =screenHeight * 0.25 - margin.top - margin.bottom;
+
+            var g12 = svg3.append("g").attr("transform","translate(" + margin.left + "," + margin.top + ")").attr("id", "g3");
+
+            var x = d3version4.scaleTime()
+                // .domain(new Date(2000), new Date(2015))
+                .rangeRound([0, width]);
+
+            var y = d3version4.scaleLinear()
+                .rangeRound([height, 0]);
+
+            var line = d3version4.line()
+                .x(function (d) {
+                    return x(d.date);
+                })
+                .y(function (d) {
+                    return y(d.close);
+                });
+
+            d3version4.tsv("data/data/gpc_"+name+".tsv", function (d) {
+                    d.date = new Date(d.date);
+                    d.close = +d.close;
+                    return d;
+                },
+
+                function (error, data) {
+                    if (error) throw error;
+
+                    x.domain(d3version4.extent(data, function (d) {
+                        return Number(d.date);
+                    }));
+                    y.domain(d3version4.extent(data, function (d) {
+                        return d.close;
+                    }));
+
+                    g12.append("g")
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3version4.axisBottom(x))
+                        .select(".domain")
+                        .remove();
+
+                    g12.append("g")
+                        .call(d3version4.axisLeft(y))
+                        .append("text")
+                        .attr("fill", "#000")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 10)
+                        .attr("dy", "0.71em")
+                        // .attr("text-anchor", "end")
+                        .text("GDP per capita");
+
+                    g12.append("path")
+                        .datum(data)
+                        .attr("fill", "none")
+                        .attr("stroke", "steelblue")
+                        .attr("stroke-linejoin", "round")
+                        .attr("stroke-linecap", "round")
+                        .attr("stroke-width", 1.5)
+                        .attr("d", line);
+                });
+
+        }
+
+
+
+
+        //індекс гендерної нерівності
+
+        function chart_gii(name) {
+
+            var svg3 = d3version4.select(".chart1"),
+                margin = {top: 20, right: 20, bottom: 30, left: 50},
+                width = +svg3.attr("width") - margin.left - margin.right,
+                height =screenHeight * 0.25 - margin.top - margin.bottom;
+
+
+            var g12 = svg3.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")").attr("id", "g1");
+
+            // var parseTime = d3.timeParse(date);
+
+            var x = d3version4.scaleTime()
+                .rangeRound([0, width]);
+
+            var y = d3version4.scaleLinear()
+                .rangeRound([height, 0]);
+
+            var line = d3version4.line()
+                .x(function (d) {
+                    return x(d.date);
+                })
+                .y(function (d) {
+                    return y(d.close);
+                });
+
+            d3version4.tsv("data/data/gii_ "+name+".tsv", function (d) {
+                    d.date = new Date(d.date);
+                    d.close = +d.close;
+                    return d;
+                },
+
+                function (error, data) {
+                    if (error) throw error;
+
+                    x.domain(d3version4.extent(data, function (d) {
+                        return d.date;
+                    }));
+                    y.domain(d3version4.extent(data, function (d) {
+                        return d.close;
+                    }));
+
+                    g12.append("g")
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3version4.axisBottom(x))
+                        .select(".domain")
+                        .remove();
+
+                    g12.append("g")
+                        .call(d3version4.axisLeft(y))
+                        .append("text")
+                        .attr("fill", "#000")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 10)
+                        .attr("dy", "0.71em")
+                        // .attr("text-anchor", "end")
+                        .text("GII");
+
+                    g12.append("path")
+                        .datum(data)
+                        .attr("fill", "none")
+                        .attr("stroke", "steelblue")
+                        .attr("stroke-linejoin", "round")
+                        .attr("stroke-linecap", "round")
+                        .attr("stroke-width", 1.5)
+                        .attr("d", line);
+                });
+
+        }
+
+
+
+
+        // індекс людського розвитку
+
+        function chart_hdi(name) {
+
+            var svg3 = d3version4.select(".chart2"),
+                margin = {top: 20, right: 20, bottom: 30, left: 50},
+                width = +svg3.attr("width") - margin.left - margin.right,
+                height =screenHeight * 0.25 - margin.top - margin.bottom;
+
+            var g12 = svg3.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")").attr("id", "g2");
+
+            var x = d3version4.scaleTime()
+                .rangeRound([0, width]);
+
+            var y = d3version4.scaleLinear()
+                .rangeRound([height, 0]);
+
+            var line = d3version4.line()
+                .x(function (d) {
+                    return x(d.date);
+                })
+                .y(function (d) {
+                    return y(d.close );
+                });
+
+            d3version4.tsv("data/data/hdi_ "+name+".tsv", function (d) {
+                    d.date = new Date(d.date);
+                    d.close = +d.close;
+                    return d;
+                },
+
+                function (error, data) {
+                    if (error) throw error;
+
+                    x.domain(d3version4.extent(data, function (d) {
+                        return d.date;
+                    }));
+                    y.domain(d3version4.extent(data, function (d) {
+                        return d.close;
+                    }));
+
+                    g12.append("g")
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(d3version4.axisBottom(x))
+                        .select(".domain")
+                        .remove();
+
+                    g12.append("g")
+                        .call(d3version4.axisLeft(y))
+                        .append("text")
+                        .attr("fill", "#000")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 10)
+                        .attr("dy", "0.71em")
+                        // .attr("text-anchor", "end")
+                        .text("HDI");
+
+                    g12.append("path")
+                        .datum(data)
+                        .attr("fill", "none")
+                        .attr("stroke", "steelblue")
+                        .attr("stroke-linejoin", "round")
+                        .attr("stroke-linecap", "round")
+                        .attr("stroke-width", 1.5)
+                        .attr("d", line);
+                });
+        }
+
+
+    </script>
+
+</body>
+</html>
